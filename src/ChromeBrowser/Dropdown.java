@@ -47,6 +47,10 @@ public class Dropdown {
        // driver.findElement(By.xpath("(//a[@value='KBL'])[2]")).click();
         driver.findElement(By.xpath("//div[@id='ctl00_mainContent_ddl_destinationStation1_CTNR']//a[@value='JLR']")).click();
 
+        //calender
+        driver.findElement(By.cssSelector("a.ui-state-default.ui-state-highlight")).click();
+
+
 
         //autocomplete Options
         driver.findElement(By.id("autosuggest")).sendKeys("ind");
