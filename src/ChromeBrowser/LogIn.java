@@ -16,13 +16,16 @@ public class LogIn {
         driver.findElement(By.linkText("Log In")).click();
         driver.close(); */
 
-        driver.get("https://login.salesforce.com/");
+/*        driver.get("https://login.salesforce.com/");
         driver.findElement(By.id("username")).sendKeys("This is my first code");
         driver.findElement(By.name("pw")).sendKeys("123");
         driver.findElement(By.xpath("//*[@id=\"Login\"]")).click();
         String errorMessage = driver.findElement(By.xpath("//*[@id=\"error\"]")).getText();
         System.out.println(errorMessage);
-        driver.close();
+        driver.close(); */
+
+        driver.get("https://www.google.de/");
+        driver.findElement(By.xpath("//form/div[2]/div[1]/div[1]/div/div[2]/input")).sendKeys("Warschau");
 
     }
 
