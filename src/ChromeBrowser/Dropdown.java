@@ -77,14 +77,24 @@ public class Dropdown {
         System.out.println(driver.findElement(By.id("Div1")).getAttribute("style").contains("opacity: 0.5"));
         driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).click();
         System.out.println(driver.findElement(By.id("Div1")).isEnabled());
-        if (driver.findElement(By.id("Div1")).getAttribute("style").contains("opacity: 1"))) {
+        if (driver.findElement(By.id("Div1")).getAttribute("style").contains("opacity: 1")) {
             System.out.println("Calender enabled");
             Assert.assertTrue(true);
         } else {
             Assert.assertTrue(false);
         }
 
+        driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_0")).click();
+        if (driver.findElement(By.id("Div1")).getAttribute("style").contains("opacity: 0.5")) {
+            System.out.println("Calender disabled");
+            Assert.assertTrue(true);
+        } else {
+            Assert.assertTrue(false);
+        }
 
+
+        //finally click on search-button
+        driver.findElement(By.id("ctl00_mainContent_btn_FindFlights")).click();
 
 
         // autocomplete example
