@@ -50,8 +50,6 @@ public class Dropdown {
         //calender
         driver.findElement(By.cssSelector("a.ui-state-default.ui-state-highlight")).click();
 
-
-
         //autocomplete Options
         driver.findElement(By.id("autosuggest")).sendKeys("ind");
         Thread.sleep(3000);
@@ -71,9 +69,26 @@ public class Dropdown {
 
         // count checkboxes
         System.out.println(driver.findElements(By.cssSelector("#discount-checkbox input[type='checkbox']")).size());
+        Assert.assertEquals(driver.findElements(By.cssSelector("#discount-checkbox input[type='checkbox']")).size(), 5);
+
+        //enabled or disabled elements
+
+        //System.out.println(driver.findElement(By.id("Div1")).isEnabled()); //the button is enabled, just opacity is reduced
+        System.out.println(driver.findElement(By.id("Div1")).getAttribute("style").contains("opacity: 0.5"));
+        driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).click();
+        System.out.println(driver.findElement(By.id("Div1")).isEnabled());
+        if (driver.findElement(By.id("Div1")).getAttribute("style").contains("opacity: 1"))) {
+            System.out.println("Calender enabled");
+            Assert.assertTrue(true);
+        } else {
+            Assert.assertTrue(false);
+        }
+
+
+
 
         // autocomplete example
-      /*  driver.get("https://www.makemytrip.com/"); //URL in the browser
+    /*  driver.get("https://www.makemytrip.com/"); //URL in the browser
         WebElement source=driver.findElement(By.id("hp-widget__sfrom"));
         source.clear();
         source.sendKeys("MUM");
