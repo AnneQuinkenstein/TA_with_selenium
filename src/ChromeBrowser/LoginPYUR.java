@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class LoginPYUR {
     static WebDriver driver;
     static WebDriverWait wait;
+
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
         driver = new ChromeDriver();

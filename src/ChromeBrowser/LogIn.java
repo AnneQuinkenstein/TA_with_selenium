@@ -9,14 +9,15 @@ public class LogIn {
 
         System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
         WebDriver driver = new ChromeDriver();
-   /*     driver.get("https://www.facebook.com/");
+
+        /*
+        driver.get("https://www.facebook.com/");
         driver.findElement(By.id("u_0_h")).click();
         driver.findElement(By.id("email")).sendKeys("This is my first code");
         driver.findElement(By.id("pass")).sendKeys("123");
-        driver.findElement(By.linkText("Log In")).click();
         driver.close(); */
 
-/*        driver.get("https://login.salesforce.com/");
+/*      driver.get("https://login.salesforce.com/");
         driver.findElement(By.id("username")).sendKeys("This is my first code");
         driver.findElement(By.name("pw")).sendKeys("123");
         driver.findElement(By.xpath("//*[@id=\"Login\"]")).click();

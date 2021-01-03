@@ -72,6 +72,22 @@ public class Dropdown {
         Assert.assertEquals(driver.findElements(By.cssSelector("#discount-checkbox input[type='checkbox']")).size(), 5);
 
         //enabled or disabled elements
+        /*
+            Many a time a test fails to click on an element or enter text in a field as the element is
+            disabled or exists in the DOM, but is not displayed on the page; this will result in an error
+            being thrown and the test resulting in failures. For building reliable tests that can run
+            unattended, a robust exception and error handling is needed in the test flow.
+            We can handle these problems by checking the state of elements. The WebElement class
+            provides the following methods to check the state of an element:
+            Method Purpose
+                isEnabled() This method checks if an element is enabled. Returns true if enabled,
+                else false for disabled.
+                isSelected() This method checks if element is selected (radio button, checkbox, and
+                so on). It returns true if selected, else false for deselected
+                isDisplayed() This method checks if element is displayed.
+                In this recipe, we will use some of these methods to check the status and handle
+                possible errors.
+         */
 
         //System.out.println(driver.findElement(By.id("Div1")).isEnabled()); //the button is enabled, just opacity is reduced
         System.out.println(driver.findElement(By.id("Div1")).getAttribute("style").contains("opacity: 0.5"));

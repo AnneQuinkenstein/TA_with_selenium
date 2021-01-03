@@ -1,0 +1,48 @@
+
+
+    Evey object may not have ID, className or name- Xpath and CSS Preferred
+    Alpha numeric id may vary on every refresh- check
+    Confirm the link object with anchor "a" tag
+    Classes should not have spaces- Compound classes cannot be accepted
+    Multipl values - Selenium identifies the first one- Scans from top left
+    Double quotes inside double quotes are not accepted
+    Xpath/CSS  can be defined in n number of ways
+    Rightclick copy on blue highlighted html code to generate xpath
+    Firepath depreciated from firefox-
+    when xpath starts with html-Not reliable- Switch browser to get another one
+    There is no direct way to get CSS in chrome. You will find it in tool bar
+    Degrade browser to less firefox 55 to ge Firepath
+    $("") - for css ,    $x("")   or xpath
+    //tagName[@attribute='value']  - xpath syntax
+    tagName[attribute='value']  -CSS  tagName#id- CSS   tagname.classname- CSS
+    //tagName[contains(@attribute,'value')]  - xpath regular expression
+    tagName[Atrribute*='value'] - Css regular expression
+
+    What is the difference between Relative and absolute xpath?
+        Relative- Doesnot depend on parent nodes
+        Parent/child- Absolute xpath –
+    How to traverse to sibling element using xpath?
+        .//*[@id='tablist1-tab1']/following-sibling::li[2]
+    How to traverse back to Parent element from Child element using Xpath?
+        .//*[@id='tablist1-tab1']/parent::ul
+    How to identify element with Text based?
+
+    waits
+    (listen to the DOM)
+
+    implicit wait
+            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    Pro: code is clean
+    Con: makes all slaw, maybe masks performace issue
+    explicit wait
+            WebDriverWait wait = new WebDriverWait(driver, 5);
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("results")));
+    Pro: specific to elements
+    Con: doesn't cover flaky sites
+    fluent explicit wait
+    checks DOM at regular intervalls and doesn't listen permanently (x sec)
+    e.g. first message apears at 3sec, second message appears at 7 sec -> want to check both and then move forward -> interval to 4sec
+        fluent wait + explicit wait are different classes, which implements the wait interface
+
+
+
