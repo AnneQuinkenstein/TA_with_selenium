@@ -53,7 +53,5 @@ public class SwitchWindows {
         driver.switchTo().window(parentId);
         System.out.println(driver.findElement(By.tagName("h3")).getText());
 
-
-
     }
 }
