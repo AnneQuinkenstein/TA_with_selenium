@@ -22,16 +22,15 @@ public class calendar {
         driver.findElement(By.id("ez-accept-all")).click();
 
 
-       WebElement closeInfobox = driver.findElement(By.xpath("//div[contains(@class,'sumome-react-wysiwyg-close-button')]"));
-       wait.until(ExpectedConditions.elementToBeClickable(closeInfobox));
-       closeInfobox.click();
+       //WebElement closeInfobox = driver.findElement(By.xpath("//div[contains(@class,'sumome-react-wysiwyg-close-button')]"));
+       //wait.until(ExpectedConditions.elementToBeClickable(closeInfobox));
+       //closeInfobox.click();
 
         wait.until(ExpectedConditions.elementToBeClickable(By.id("travel_date")));
         driver.findElement(By.id("travel_date")).click();
-
+        
         //Grab common attribute and put it into list and iterate
-
-        List<WebElement> days = driver.findElements(By.className("day"));
+        List<WebElement> days = driver.findElements(By.xpath("//td[@class='day']"));
 
         for (int i = 0; i < days.size(); i ++){
            if( days.get(i).getText().equalsIgnoreCase("23")) {
