@@ -8,9 +8,9 @@ public class BrowerActions {
         System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().deleteCookieNamed("sessionKey");
-       // driver.manage().deleteAllCookies();
+        // driver.manage().deleteCookieNamed("sessionKey");
+        driver.manage().deleteAllCookies();
 
-        driver.get("google.de");
+        driver.get("https://www.google.de");
     }
 }
