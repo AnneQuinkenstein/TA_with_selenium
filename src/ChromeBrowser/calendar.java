@@ -13,7 +13,7 @@ import java.util.List;
 public class calendar {
     public static void main(String[] args) {
         String url = "https://www.path2usa.com/travel-companions";
-        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//Udemy//Browserdriver//chromedriver");
         WebDriver driver = new ChromeDriver();
         WebDriverWait wait = new WebDriverWait(driver, 200);
 

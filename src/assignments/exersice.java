@@ -15,7 +15,7 @@ public class exersice {
         int optionNum = 2;
         String labelOption = "";
 
-        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//Udemy//Browserdriver//chromedriver");
         WebDriver driver = new ChromeDriver();
 
         driver.get(url);

@@ -14,7 +14,7 @@ import java.util.List;
 public class Dropdown {
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//Udemy//Browserdriver//chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
         driver.manage().window().maximize();

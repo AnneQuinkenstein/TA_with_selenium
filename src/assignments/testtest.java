@@ -13,7 +13,7 @@ public class testtest
 
     {
 
-        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//Udemy//Browserdriver//chromedriver");
 
         WebDriver driver = new ChromeDriver();
 

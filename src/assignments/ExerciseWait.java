@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ExerciseWait {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//Udemy//Browserdriver//chromedriver");
         WebDriver driver = new ChromeDriver();
         WebDriverWait wait = new WebDriverWait(driver, 5);
 

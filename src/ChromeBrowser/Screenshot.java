@@ -14,7 +14,7 @@ import java.io.IOException;
 public class Screenshot {
     public static void main(String[] args) throws IOException {
         String url = "https://google.de";
-        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//Udemy//Browserdriver//chromedriver");
         WebDriver driver = new ChromeDriver();
 
         driver.get(url);

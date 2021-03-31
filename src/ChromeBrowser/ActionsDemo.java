@@ -13,7 +13,7 @@ public class ActionsDemo {
     public static void main(String[] args) {
         String url = "https://www.amazon.de/";
 
-        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//Udemy//Browserdriver//chromedriver");
         WebDriver driver = new ChromeDriver();
         Actions actions = new Actions(driver);
 

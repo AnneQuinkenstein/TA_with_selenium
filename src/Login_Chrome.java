@@ -9,7 +9,7 @@ public class Login_Chrome {
         //Class name = ChromeDriver
         //invoke .exe file first
         ///home/lisa/IdeaProjects
-        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//Udemy//Browserdriver//chromedriver");
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://www.google.de/");

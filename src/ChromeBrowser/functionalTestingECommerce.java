@@ -14,7 +14,7 @@ public class functionalTestingECommerce {
 
         // TODO Auto-generated method stub
 
-        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//Udemy//Browserdriver//chromedriver");
         WebDriver driver = new ChromeDriver();
 
         String[] itemsNeeded = {"Cucumber", "Brocolli", "Beetroot"};

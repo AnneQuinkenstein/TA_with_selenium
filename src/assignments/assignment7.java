@@ -11,7 +11,7 @@ import java.util.List;
 public class assignment7 {
     public static void main(String[] args) {
         String url ="https://rahulshettyacademy.com/AutomationPractice/";
-        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//Udemy//Browserdriver//chromedriver");
         WebDriver driver = new ChromeDriver();
 
         driver.get(url);

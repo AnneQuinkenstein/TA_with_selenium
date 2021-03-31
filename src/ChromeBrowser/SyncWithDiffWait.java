@@ -17,7 +17,7 @@ public class SyncWithDiffWait {
 
 // TODO Auto-generated method stub
 
-        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//Udemy//Browserdriver//chromedriver");
         WebDriver driver = new ChromeDriver();
 
 //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

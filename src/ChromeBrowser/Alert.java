@@ -9,7 +9,7 @@ public class Alert {
     public static void main(String[] args) {
         String myName = "Anne";
 
-        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//Udemy//Browserdriver//chromedriver");
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://rahulshettyacademy.com/AutomationPractice/");

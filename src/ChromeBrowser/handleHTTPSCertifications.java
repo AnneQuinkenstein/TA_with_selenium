@@ -20,7 +20,7 @@ public class handleHTTPSCertifications {
         ChromeOptions o= new ChromeOptions();
         o.merge(dc);
         //pass to driver
-        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//Udemy//Browserdriver//chromedriver");
         WebDriver driver = new ChromeDriver(o);
 
         driver.get("google.de");

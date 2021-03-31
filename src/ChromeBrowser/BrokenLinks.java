@@ -15,7 +15,7 @@ public class BrokenLinks {
     public static void main(String[] args) throws IOException {
         String startUrl = "https://rahulshettyacademy.com/AutomationPractice/";
 
-        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//Udemy//Browserdriver//chromedriver");
         WebDriver driver = new ChromeDriver();
         SoftAssert a = new SoftAssert();
 

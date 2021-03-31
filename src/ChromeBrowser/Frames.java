@@ -11,7 +11,7 @@ public class Frames {
         /*
         String url = "https://jqueryui.com/droppable/";
 
-        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//Udemy//Browserdriver//chromedriver");
         WebDriver driver = new ChromeDriver();
         Actions action = new Actions(driver);
 
@@ -26,7 +26,7 @@ public class Frames {
 
         String url = "https://the-internet.herokuapp.com/";
 
-        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//Udemy//Browserdriver//chromedriver");
         WebDriver driver = new ChromeDriver();
         Actions action = new Actions(driver);
 

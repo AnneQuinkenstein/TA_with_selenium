@@ -13,7 +13,7 @@ public class SwitchWindows {
         /*
         String url = "https://rahulshettyacademy.com/loginpagePractise/#";
 
-        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//Udemy//Browserdriver//chromedriver");
         WebDriver driver = new ChromeDriver();
 
         driver.get(url);
@@ -33,7 +33,7 @@ public class SwitchWindows {
 
         String url = "https://the-internet.herokuapp.com/";
 
-        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//chromedriver");
+        System.setProperty("webdriver.chrome.driver", "//home//lisa//IdeaProjects//Udemy//Browserdriver//chromedriver");
         WebDriver driver = new ChromeDriver();
 
         driver.get(url);
